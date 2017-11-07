@@ -11,7 +11,11 @@
       "experimentalDecorators": true,
       "target": "es5",
       "types": [
-        "node"
+        "node",
+        "mocha",
+        "chai",
+        "supertest",
+        "superagent"
      ],
       "typeRoots": [
         "node_modules/@types"
