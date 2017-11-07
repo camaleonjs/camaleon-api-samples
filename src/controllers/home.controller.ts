@@ -7,5 +7,4 @@ export class HomeController implements IController {
             res.send(200, {});
         });
     }
-
 }

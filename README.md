@@ -12,6 +12,14 @@ npm start
 
 ```
 
+## Docker
+
+```
+docker build -t "camaleon-api-samples" .
+
+docker run -p 3000:3000 "camaleon-api-samples"
+```
+
 ## Browser
 
 ```
