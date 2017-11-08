@@ -4,13 +4,13 @@
   "description": "api template using typescript",
   "scripts": {
     "start": "npm install && npm build && npm run watch",
-    "build": "npm run build-ts && npm run tslint && echo Build finished!",
+    "build": "npm test && npm run build-ts && npm run tslint && echo Build finished!",
     "build-ts": "tsc",
     "build-watch": "tsc -w",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
     "watch": "nodemon -e ts -w ./src -x npm run watch:serve",
     "watch:serve": "ts-node --inspect src/server.ts",
-    "test": "mocha -r ts-node/register __tests__/**/*.spec.ts --exit"
+    "test": "mocha -r ts-node/register tests/**/*.spec.ts --exit"
   },
   "author": {
     "name": "CamaleonJS",
@@ -28,7 +28,7 @@
   ],
   "license": "ISC",
   "dependencies": {
-    "camaleon-api": "^1.0.*",
+    "camaleon-api": "^1.0.9",
     "tsc": "^1.20150623.0",
     "tslint": "^5.5.0",
     "typescript": "^2.4.1"
